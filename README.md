@@ -10,6 +10,12 @@ a ToDo app with Ethereum smart contracts
 
 ## Commands
 
+- compiling
+
+```
+truffle compile
+```
+
 - deploying smart contract to blockchain
 
 ```
@@ -22,7 +28,7 @@ truffle migrate
 truffle console
 ```
 
-- ToDoList is the name of the smart contract that is created in migrations folder. We retrive deployed copy of smart contract and assign it to variable todoList
+- ToDoList is the name of the smart contract that is created in migrations folder. We retrive deployed copy of smart contract and assign it to the variable todoList
 
 ```
 todoList = await ToDoList.deployed()
@@ -32,4 +38,11 @@ todoList = await ToDoList.deployed()
 
 ```
 todoList.address
+```
+
+- deploying new copy to blockchain
+
+```
+truffle migrate --reset (if we added some new code)
+
 ```
