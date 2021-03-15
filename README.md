@@ -40,9 +40,9 @@ todoList = await ToDoList.deployed()
 todoList.address
 ```
 
-- deploying new copy to blockchain
+- deploying new copy to the blockchain (if we added some new code)
 
 ```
-truffle migrate --reset (if we added some new code)
+truffle migrate --reset
 
 ```
